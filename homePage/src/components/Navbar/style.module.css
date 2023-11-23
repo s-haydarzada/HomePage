@@ -1,0 +1,101 @@
+.navbar{
+    width: 60%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.contact{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+    padding-top: 20px;
+}
+
+.contact a{
+    text-decoration: none;
+}
+
+.contact p a{
+    font-size: 20px;
+    color: white;
+}
+
+.navList ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navList ul li{
+    list-style: none;
+    position: relative;
+}
+
+.navList ul li:hover a{
+    color: #ec7532;
+}
+
+.navList ul li::before{
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: orange;
+    transition: .7s;
+
+}
+
+.navList ul li:nth-child(1)::before{
+    width: 100%;
+}
+
+.navList ul li:hover::before{
+    width: 100%;
+    box-shadow: 0 0 20px 0 #fbbd61;
+
+}
+
+.navList ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu:hover .dropdown{
+    width: 100%;
+    background: linear-gradient(to right, #ec7532 0%,#fbbd61 100%);
+    text-align: center;
+    
+}
+
+.dropdown{
+    position: absolute;
+    top: 100%;
+    overflow: hidden;
+    width: 0;
+    height: 50px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submenu .dropdown h2 a{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.submenu:hover .dropdown h2 a{
+    color: white;
+}

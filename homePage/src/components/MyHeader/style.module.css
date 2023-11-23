@@ -1,0 +1,9 @@
+.myheader{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   /* background-color: red; */
+   z-index: 100;
+   position: relative;
+}
